@@ -1,16 +1,19 @@
 package handlers
 
 import (
-	"math/rand"
+	"log"
 	"net/url"
 	"time"
+	"url-shortener/internal/cache"
 	"url-shortener/internal/models"
 	"url-shortener/internal/storage"
 
 	"github.com/gin-gonic/gin"
+
+	"math/rand"
 )
 
-func CreateShortURL(c *gin.Context, storage *storage.PostgresStorage) {
+func CreateShortURL(c *gin.Context, storage *storage.PostgresStorage, cache *cache.RedisCache) {
 	var req models.CreateRequest
 
 	if err := c.ShouldBindJSON(&req); err != nil {
@@ -25,6 +28,8 @@ func CreateShortURL(c *gin.Context, storage *storage.PostgresStorage) {
 
 	existingURL, err := storage.FindByOriginal(req.URL)
 	if err == nil {
+		cache.Set(existingURL.Key, existingURL.Original, 24*time.Hour)
+
 		c.JSON(200, models.CreateResponse{
 			Key:      existingURL.Key,
 			ShortURL: "http://localhost:8080/" + existingURL.Key,
@@ -44,20 +49,32 @@ func CreateShortURL(c *gin.Context, storage *storage.PostgresStorage) {
 		return
 	}
 
+	cache.Set(key, req.URL, 24*time.Hour)
+
 	c.JSON(200, models.CreateResponse{
 		Key:      key,
 		ShortURL: "http://localhost:8080/" + key,
 	})
 }
 
-func RedirectToURL(c *gin.Context, storage *storage.PostgresStorage) {
+func RedirectToURL(c *gin.Context, storage *storage.PostgresStorage, cache *cache.RedisCache) {
 	key := c.Param("key")
+
+	if cachedURL, err := cache.Get(key); err == nil {
+		log.Printf("Cache HIT for key: %s", key)
+		c.Redirect(302, cachedURL)
+		return
+	}
+
+	log.Printf("Cache MISS for key: %s", key)
 
 	url, err := storage.FindByKey(key)
 	if err != nil {
 		c.JSON(404, gin.H{"error": "URL not found"})
 		return
 	}
+
+	cache.Set(key, url.Original, 24*time.Hour)
 
 	c.Redirect(302, url.Original)
 }
