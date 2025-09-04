@@ -4,8 +4,8 @@ import "time"
 
 type URL struct {
 	ID        uint      `json:"id"`
-	Key       string    `json:"key"`
-	Original  string    `json:"original_url"`
+	Key       string    `gorm:"uniqueIndex;not null" json:"key"`
+	Original  string    `gorm:"not null" json:"original_url"`
 	CreatedAt time.Time `json:"created_at"`
 }
 

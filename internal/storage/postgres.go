@@ -13,7 +13,7 @@ type PostgresStorage struct {
 	DB *gorm.DB
 }
 
-func NewPostgesStorage(dsn string) (*PostgresStorage, error) {
+func NewPostgresStorage(dsn string) (*PostgresStorage, error) {
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
 		return nil, fmt.Errorf("failed to connect to database: %w", err)

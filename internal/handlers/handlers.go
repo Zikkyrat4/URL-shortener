@@ -2,15 +2,15 @@ package handlers
 
 import (
 	"math/rand"
+	"net/url"
 	"time"
 	"url-shortener/internal/models"
+	"url-shortener/internal/storage"
 
 	"github.com/gin-gonic/gin"
 )
 
-var urlStore = make(map[string]string)
-
-func CreateShortURL(c *gin.Context) {
+func CreateShortURL(c *gin.Context, storage *storage.PostgresStorage) {
 	var req models.CreateRequest
 
 	if err := c.ShouldBindJSON(&req); err != nil {
@@ -18,9 +18,31 @@ func CreateShortURL(c *gin.Context) {
 		return
 	}
 
-	key := generateRandomKey(6)
+	if !isValidURL(req.URL) {
+		c.JSON(400, gin.H{"error": "Invalid URL"})
+		return
+	}
 
-	urlStore[key] = req.URL
+	existingURL, err := storage.FindByOriginal(req.URL)
+	if err == nil {
+		c.JSON(200, models.CreateResponse{
+			Key:      existingURL.Key,
+			ShortURL: "http://localhost:8080/" + existingURL.Key,
+		})
+		return
+	}
+
+	key := generateUniqueKey(6, storage)
+
+	newURL := &models.URL{
+		Key:      key,
+		Original: req.URL,
+	}
+
+	if err := storage.Save(newURL); err != nil {
+		c.JSON(500, gin.H{"error": "Failed to save URL"})
+		return
+	}
 
 	c.JSON(200, models.CreateResponse{
 		Key:      key,
@@ -28,24 +50,37 @@ func CreateShortURL(c *gin.Context) {
 	})
 }
 
-func RedirectToURL(c *gin.Context) {
+func RedirectToURL(c *gin.Context, storage *storage.PostgresStorage) {
 	key := c.Param("key")
 
-	if originalURL, exists := urlStore[key]; exists {
-		c.Redirect(302, originalURL)
-	} else {
+	url, err := storage.FindByKey(key)
+	if err != nil {
 		c.JSON(404, gin.H{"error": "URL not found"})
+		return
+	}
+
+	c.Redirect(302, url.Original)
+}
+
+func generateUniqueKey(length int, storage *storage.PostgresStorage) string {
+	const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+	rand.New(rand.NewSource(time.Now().UnixNano()))
+
+	for {
+		b := make([]byte, length)
+		for i := range b {
+			b[i] = charset[rand.Intn(len(charset))]
+		}
+		key := string(b)
+
+		_, err := storage.FindByKey(key)
+		if err != nil {
+			return key
+		}
 	}
 }
 
-func generateRandomKey(length int) string {
-	const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-	rand.Seed(time.Now().UnixNano())
-
-	b := make([]byte, length)
-
-	for i := range b {
-		b[i] = charset[rand.Intn(len(charset))]
-	}
-	return string(b)
+func isValidURL(urlString string) bool {
+	u, err := url.Parse(urlString)
+	return err == nil && u.Scheme != "" && u.Host != ""
 }

@@ -2,22 +2,21 @@ package main
 
 import (
 	"log"
-	"url-shortener/internal/handlers"
-
-	"github.com/gin-gonic/gin"
+	"os"
+	"url-shortener/internal/app"
 )
 
 func main() {
-	r := gin.Default()
+	dsn := os.Getenv("DATABASE_URL")
+	if dsn == "" {
+		dsn = "host=localhost user=postgres password=postgres dbname=urlshortener port=5432 sslmode=disable"
+	}
 
-	r.GET("/", func(c *gin.Context) {
-		c.String(200, "URL-shortener API is running")
-	})
+	app, err := app.NewApp(dsn)
+	if err != nil {
+		log.Fatal("Failed to create app:", err)
+	}
 
-	r.POST("/", handlers.CreateShortURL)
-
-	r.GET("/:key", handlers.RedirectToURL)
-
-	log.Println("Server is starting 8080")
-	r.Run(":8080")
+	log.Println("Server starting on :8080...")
+	app.Router.Run(":8080")
 }
