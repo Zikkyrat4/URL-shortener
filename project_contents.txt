@@ -33,16 +33,22 @@ internal/handlers/handlers.go
 .git/description
 .git/index
 .git/COMMIT_EDITMSG
+.git/objects/3e/f5e6e92176657987af33f5e89aec11971ad1d1
+.git/objects/3b/24477760359bf1ce590af98202c857e6c74c50
 .git/objects/03/97106cb3f92774a30ea3e476a60729fe44c83b
 .git/objects/9b/fe152a6678028337be6fb621b1cf63f228a6a1
 .git/objects/9e/4951538d3aa8a3a5b7667c6d5402aa760d93b7
+.git/objects/94/eb7b19da2a6fb2eaee9406b5e65b78032fe661
 .git/objects/5a/2adfe1010c610a6432215b7eaeb2060d4639e6
+.git/objects/5f/98080634fd38714ca9afcc61770307b8be57a0
 .git/objects/5f/ccb74c50150b5ca2106eb02015270b1645fdfa
+.git/objects/b2/5624d1a37ddf1ba9d5372161f1c4d78f8d7ae6
 .git/objects/d7/7ae1da2bdfc23c49c89a9d203a104555475910
 .git/objects/b3/f91f6a18dad9a02309c3b54d9842ffd7976753
 .git/objects/b3/585639b8df452cbb53ae4eb175260f6501a400
 .git/objects/b4/35a88c3d3b9cf7b80990810e3ec9dfbfafd569
 .git/objects/d1/c07bfb3916c35bf47a53657fabb8cff1497994
+.git/objects/bc/f25b3e8f4722477a067b7927bd8f7f76ccb1bd
 .git/objects/bc/5755adca2a2472fc664cbc966c47e10d3f2c0a
 .git/objects/bc/c42a2ffda9ff1a28037e846225a7adc3d39861
 .git/objects/f4/e77f6ebc844fec338274bb5f372a2062ae6399
@@ -55,20 +61,29 @@ internal/handlers/handlers.go
 .git/objects/e4/af1e47ef40f91521d0a69730c23fe27fb79db4
 .git/objects/ec/4a16bb1e5e51f73c359d40e0061458d3095b3b
 .git/objects/4e/5b3c67b845b1c1de219d4839b5875b384f0f34
+.git/objects/4b/0c75297115f60d247a53177b0aac82f799b745
 .git/objects/4b/825dc642cb6eb9a060e54bf8d69288fbee4904
+.git/objects/7c/3ba73f91f0fa565839413e9e541fcb91161a99
+.git/objects/16/9d6b9be6e30d9966622708a737f6fcddacb060
 .git/objects/28/a2b525ae80f6133ec2a1ea71ad37ad84033d7f
 .git/objects/8a/3bb7668d19aecc1fbaba7083d881fb2f295b7f
+.git/objects/8a/959767d1934652a6a0f3a473b648988f59e25c
 .git/objects/4c/bf325590b249b96cc26987fd851987e1f1e6fd
 .git/objects/26/20cff91bd7d07c1a600650597f7442cae8dc3a
 .git/objects/72/16ab30ad7640ebc459e6b438097ca3fb4fee90
 .git/objects/9f/572405155f5c6c8de1cdfe7fe74b2eb30ac4f6
 .git/objects/31/2a9bc4592aeae69d994c1a4b7e802a2d04fb96
 .git/objects/91/0c479bb15059faeefd6ea6222f1ddb849e8bd7
+.git/objects/96/cd80b9927085b6e68b7f137cba4fc4b508f2c1
 .git/objects/0a/e5ca74777bd664187d9aaaf77590917c3b3281
+.git/objects/a7/83f734831ec3348961a94c923a93815cf15dd1
 .git/objects/a7/8790b00f6f6dfb5d91c1822ae67e05f4543ce1
+.git/objects/a7/8b2396247b62fba6530bac6ad3b026a0333b10
 .git/objects/b8/be0084a2833de7a336d079d74334ecafd8cc3b
+.git/objects/b8/816d54e70889881d5eff471712e307cdcf2fca
 .git/objects/a9/cada6822bb468cba705ee26c4b5f276c974dc9
 .git/objects/d5/b562bbbdf37088381067d5b02225aeb020d808
+.git/objects/db/e9256bcf7bf7bc8de89ece40a740a3ad11cb86
 .git/objects/de/f1577487dbb71d72cb9d9860bb2ec54913068c
 .git/objects/b9/22967730e4db8a0ef512505d83021a57bcebc7
 .git/objects/c3/1f4158eeb85608f91737605a4165070a6eb1f0
@@ -81,11 +96,14 @@ internal/handlers/handlers.go
 .git/objects/cb/6f67cad05f9f8699940fd9ecad0af4b3b1020b
 .git/objects/e0/0dc1e162d53b6df95a76d013446fa360daae3c
 .git/objects/1b/7b3a5a1a94d0d9c8a3b0a36930ecdf3a135a94
+.git/objects/1b/14c5e131e806af4123bb315d879187ba9b4212
+.git/objects/48/7a3dccb7bf707d75df776da0da7d8119e9e188
 .git/objects/48/2a63bfb647356d59b8d2dc78b3941359984a97
 .git/objects/70/307c232463498858b350953c2f5ab9ea17488b
 .git/objects/24/6092583e8d2024e3364591e64aff61daf027e9
 .git/objects/12/1aa6439bb9814e8797916ab43aee44c921fb3d
 .git/objects/8c/038bbb96b5e5d735a26fe0326b5c559d9db261
+.git/objects/85/3fc071f881b39e9cda3c2550daafb62ac54bcb
 .git/objects/8e/13545b8f62b2eb4edad2cfcdde593822fe868b
 .git/info/exclude
 .git/logs/HEAD
@@ -332,6 +350,10 @@ terraform/*.tfstate
 terraform/*.tfstate.backup
 terraform/.terraform.lock.hcl
 terraform/terraform.tfvars
+
+
+.DS_Store
+project_contents.txt
 ```
 
 docker-compose.yml:
@@ -386,23 +408,23 @@ terraform.tfstate.backup:
 {
   "version": 4,
   "terraform_version": "1.5.7",
-  "serial": 82,
+  "serial": 145,
   "lineage": "a178e035-426f-39c0-3939-e7f617ac3a6e",
   "outputs": {
     "application_url": {
-      "value": "http://158.160.110.57",
+      "value": "http://89.169.152.220",
       "type": "string"
     },
     "database_host": {
-      "value": "rc1a-m2b8qtb1hmld5bih.mdb.yandexcloud.net",
+      "value": "rc1a-qph7k6s9hr8s9dkh.mdb.yandexcloud.net",
       "type": "string"
     },
     "ssh_connection_command": {
-      "value": "ssh -i ~/.ssh/id_ed25519_terraform ubuntu@158.160.110.57",
+      "value": "ssh -i ~/.ssh/id_ed25519_terraform ubuntu@89.169.152.220",
       "type": "string"
     },
     "vm_public_ip": {
-      "value": "158.160.110.57",
+      "value": "89.169.152.220",
       "type": "string"
     }
   },
@@ -417,7 +439,7 @@ terraform.tfstate.backup:
           "status": "tainted",
           "schema_version": 0,
           "attributes": {
-            "id": "4311999482705800477",
+            "id": "2462072196160975195",
             "triggers": null
           },
           "sensitive_attributes": [],
@@ -443,8 +465,8 @@ terraform.tfstate.backup:
             "boot_disk": [
               {
                 "auto_delete": true,
-                "device_name": "fhm3dtjt373sgi5mnl99",
-                "disk_id": "fhm3dtjt373sgi5mnl99",
+                "device_name": "fhm7o9enhv5b3r6ufagq",
+                "disk_id": "fhm7o9enhv5b3r6ufagq",
                 "initialize_params": [
                   {
                     "block_size": 4096,
@@ -459,14 +481,14 @@ terraform.tfstate.backup:
                 "mode": "READ_WRITE"
               }
             ],
-            "created_at": "2025-09-12T15:10:27Z",
+            "created_at": "2025-09-19T14:43:39Z",
             "description": "",
             "filesystem": [],
             "folder_id": "b1g9lv48m4bbjrldflqj",
-            "fqdn": "fhmau0pclh4psm06o898.auto.internal",
+            "fqdn": "fhmocu2u6i7ojhs8c97g.auto.internal",
             "gpu_cluster_id": "",
             "hostname": "",
-            "id": "fhmau0pclh4psm06o898",
+            "id": "fhmocu2u6i7ojhs8c97g",
             "labels": {},
             "local_disk": [],
             "metadata": {
@@ -487,20 +509,20 @@ terraform.tfstate.backup:
               {
                 "dns_record": [],
                 "index": 0,
-                "ip_address": "192.168.10.8",
+                "ip_address": "192.168.10.16",
                 "ipv4": true,
                 "ipv6": false,
                 "ipv6_address": "",
                 "ipv6_dns_record": [],
-                "mac_address": "d0:0d:af:03:2c:ac",
+                "mac_address": "d0:0d:18:67:85:e3",
                 "nat": true,
                 "nat_dns_record": [],
-                "nat_ip_address": "158.160.110.57",
+                "nat_ip_address": "89.169.152.220",
                 "nat_ip_version": "IPV4",
                 "security_group_ids": [
-                  "enp5b39rcf7pkj3d9igq"
+                  "enpsk7ved5b4rcj989q4"
                 ],
-                "subnet_id": "e9b8ivb77dnts43662st"
+                "subnet_id": "e9b0f5b74v037omglq1v"
               }
             ],
             "placement_policy": [
@@ -598,7 +620,7 @@ terraform.tfstate.backup:
                 "version": "15"
               }
             ],
-            "created_at": "2025-09-10T15:30:25Z",
+            "created_at": "2025-09-19T14:43:36Z",
             "database": [],
             "deletion_protection": false,
             "description": "",
@@ -608,19 +630,19 @@ terraform.tfstate.backup:
             "host": [
               {
                 "assign_public_ip": false,
-                "fqdn": "rc1a-m2b8qtb1hmld5bih.mdb.yandexcloud.net",
+                "fqdn": "rc1a-qph7k6s9hr8s9dkh.mdb.yandexcloud.net",
                 "name": "",
                 "priority": 0,
                 "replication_source": "",
                 "replication_source_name": "",
                 "role": "MASTER",
-                "subnet_id": "e9b8ivb77dnts43662st",
+                "subnet_id": "e9b0f5b74v037omglq1v",
                 "zone": "ru-central1-a"
               }
             ],
             "host_group_ids": [],
             "host_master_name": "",
-            "id": "c9qt0402chclrvlopm5v",
+            "id": "c9qr0dk1a9aoe6n4i3ji",
             "labels": {},
             "maintenance_window": [
               {
@@ -630,7 +652,7 @@ terraform.tfstate.backup:
               }
             ],
             "name": "url-shortener-db",
-            "network_id": "enpkunh75h2c08h563dn",
+            "network_id": "enp6n0t0iv7n0hfj3hao",
             "restore": [],
             "security_group_ids": [],
             "status": "RUNNING",
@@ -655,10 +677,10 @@ terraform.tfstate.backup:
         {
           "schema_version": 0,
           "attributes": {
-            "cluster_id": "c9qt0402chclrvlopm5v",
+            "cluster_id": "c9qr0dk1a9aoe6n4i3ji",
             "deletion_protection": "unspecified",
             "extension": [],
-            "id": "c9qt0402chclrvlopm5v:urlshortener",
+            "id": "c9qr0dk1a9aoe6n4i3ji:urlshortener",
             "lc_collate": "C",
             "lc_type": "C",
             "name": "urlshortener",
@@ -686,11 +708,11 @@ terraform.tfstate.backup:
         {
           "schema_version": 0,
           "attributes": {
-            "cluster_id": "c9qt0402chclrvlopm5v",
+            "cluster_id": "c9qr0dk1a9aoe6n4i3ji",
             "conn_limit": 50,
             "deletion_protection": "unspecified",
             "grants": [],
-            "id": "c9qt0402chclrvlopm5v:app_user",
+            "id": "c9qr0dk1a9aoe6n4i3ji:app_user",
             "login": true,
             "name": "app_user",
             "password": "secure_password_123",
@@ -724,15 +746,15 @@ terraform.tfstate.backup:
         {
           "schema_version": 0,
           "attributes": {
-            "created_at": "2025-09-10T15:30:22Z",
-            "default_security_group_id": "enpk4lt142qin5bbj6o0",
+            "created_at": "2025-09-19T14:43:32Z",
+            "default_security_group_id": "enpd4i2a22jfvp3dkh4a",
             "description": "",
             "folder_id": "b1g9lv48m4bbjrldflqj",
-            "id": "enpkunh75h2c08h563dn",
+            "id": "enp6n0t0iv7n0hfj3hao",
             "labels": {},
             "name": "url-shortener-network",
             "subnet_ids": [
-              "e9b8ivb77dnts43662st"
+              "e9b0f5b74v037omglq1v"
             ],
             "timeouts": null
           },
@@ -750,13 +772,13 @@ terraform.tfstate.backup:
         {
           "schema_version": 0,
           "attributes": {
-            "created_at": "2025-09-10T15:30:25Z",
+            "created_at": "2025-09-19T14:43:37Z",
             "description": "Security group for URL shortener application",
             "egress": [
               {
                 "description": "Outbound traffic",
                 "from_port": 0,
-                "id": "enpjaisua3f28jtcr257",
+                "id": "enptftciik2jeikhb3s0",
                 "labels": {},
                 "port": -1,
                 "predefined_target": "",
@@ -770,12 +792,12 @@ terraform.tfstate.backup:
               }
             ],
             "folder_id": "b1g9lv48m4bbjrldflqj",
-            "id": "enp5b39rcf7pkj3d9igq",
+            "id": "enpsk7ved5b4rcj989q4",
             "ingress": [
               {
                 "description": "Application port",
                 "from_port": -1,
-                "id": "enpulssrt9gvgvee78bq",
+                "id": "enp67rnjalao31p2mere",
                 "labels": {},
                 "port": 8080,
                 "predefined_target": "",
@@ -790,7 +812,7 @@ terraform.tfstate.backup:
               {
                 "description": "HTTP",
                 "from_port": -1,
-                "id": "enpbsmu94sni3rvhp81r",
+                "id": "enphl1vq9fbeadrgrjpm",
                 "labels": {},
                 "port": 80,
                 "predefined_target": "",
@@ -805,7 +827,7 @@ terraform.tfstate.backup:
               {
                 "description": "HTTPS",
                 "from_port": -1,
-                "id": "enp1dq600co6ckagjlt6",
+                "id": "enpj3eh5h8d1iv46tts7",
                 "labels": {},
                 "port": 443,
                 "predefined_target": "",
@@ -820,7 +842,7 @@ terraform.tfstate.backup:
               {
                 "description": "SSH",
                 "from_port": -1,
-                "id": "enpt5dh590892oi8lkf4",
+                "id": "enp3ef7fr5clfk8j3av8",
                 "labels": {},
                 "port": 22,
                 "predefined_target": "",
@@ -835,7 +857,7 @@ terraform.tfstate.backup:
             ],
             "labels": {},
             "name": "url-shortener-security-group",
-            "network_id": "enpkunh75h2c08h563dn",
+            "network_id": "enp6n0t0iv7n0hfj3hao",
             "status": "ACTIVE",
             "timeouts": null
           },
@@ -856,14 +878,14 @@ terraform.tfstate.backup:
         {
           "schema_version": 0,
           "attributes": {
-            "created_at": "2025-09-10T15:30:24Z",
+            "created_at": "2025-09-19T14:43:35Z",
             "description": "",
             "dhcp_options": [],
             "folder_id": "b1g9lv48m4bbjrldflqj",
-            "id": "e9b8ivb77dnts43662st",
+            "id": "e9b0f5b74v037omglq1v",
             "labels": {},
             "name": "url-shortener-subnet",
-            "network_id": "enpkunh75h2c08h563dn",
+            "network_id": "enp6n0t0iv7n0hfj3hao",
             "route_table_id": "",
             "timeouts": null,
             "v4_cidr_blocks": [
@@ -914,23 +936,23 @@ terraform.tfstate:
 {
   "version": 4,
   "terraform_version": "1.5.7",
-  "serial": 85,
+  "serial": 149,
   "lineage": "a178e035-426f-39c0-3939-e7f617ac3a6e",
   "outputs": {
     "application_url": {
-      "value": "http://158.160.110.57",
+      "value": "http://89.169.152.220",
       "type": "string"
     },
     "database_host": {
-      "value": "rc1a-m2b8qtb1hmld5bih.mdb.yandexcloud.net",
+      "value": "rc1a-qph7k6s9hr8s9dkh.mdb.yandexcloud.net",
       "type": "string"
     },
     "ssh_connection_command": {
-      "value": "ssh -i ~/.ssh/id_ed25519_terraform ubuntu@158.160.110.57",
+      "value": "ssh -i ~/.ssh/id_ed25519_terraform ubuntu@89.169.152.220",
       "type": "string"
     },
     "vm_public_ip": {
-      "value": "158.160.110.57",
+      "value": "89.169.152.220",
       "type": "string"
     }
   },
@@ -942,17 +964,18 @@ terraform.tfstate:
       "provider": "provider[\"registry.terraform.io/hashicorp/null\"]",
       "instances": [
         {
-          "status": "tainted",
           "schema_version": 0,
           "attributes": {
-            "id": "2126921648745979839",
+            "id": "235012300876970421",
             "triggers": null
           },
           "sensitive_attributes": [],
           "dependencies": [
             "yandex_compute_instance.url-shortener-vm",
             "yandex_mdb_postgresql_cluster.url-shortener-db",
-            "yandex_mdb_postgresql_database.urlshortener"
+            "yandex_mdb_postgresql_database.urlshortener",
+            "yandex_vpc_security_group.url-shortener-sg",
+            "yandex_vpc_subnet.url-shortener-subnet"
           ]
         }
       ]
@@ -971,8 +994,8 @@ terraform.tfstate:
             "boot_disk": [
               {
                 "auto_delete": true,
-                "device_name": "fhm3dtjt373sgi5mnl99",
-                "disk_id": "fhm3dtjt373sgi5mnl99",
+                "device_name": "fhm7o9enhv5b3r6ufagq",
+                "disk_id": "fhm7o9enhv5b3r6ufagq",
                 "initialize_params": [
                   {
                     "block_size": 4096,
@@ -987,19 +1010,19 @@ terraform.tfstate:
                 "mode": "READ_WRITE"
               }
             ],
-            "created_at": "2025-09-12T15:10:27Z",
+            "created_at": "2025-09-19T14:43:39Z",
             "description": "",
             "filesystem": [],
             "folder_id": "b1g9lv48m4bbjrldflqj",
-            "fqdn": "fhmau0pclh4psm06o898.auto.internal",
+            "fqdn": "fhmocu2u6i7ojhs8c97g.auto.internal",
             "gpu_cluster_id": "",
             "hostname": "",
-            "id": "fhmau0pclh4psm06o898",
+            "id": "fhmocu2u6i7ojhs8c97g",
             "labels": {},
             "local_disk": [],
             "metadata": {
               "ssh-keys": "ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN574XK1yUf6MzqHMVgU4u+JdFj7HlE0Mnk6KIruBCm7 prokopenko.danilka121@gmail.com",
-              "user-data": "#cloud-config\npackages:\n  - docker.io\n  - curl\n  - nginx\nruncmd:\n  - systemctl enable docker\n  - systemctl start docker\n  # Добавляем пользователя в группу docker и перезагружаем групповые права\n  - usermod -aG docker ubuntu\n  - newgrp docker\n  # Установка Docker Compose v2\n  - mkdir -p /usr/local/lib/docker/cli-plugins\n  - curl -SL https://github.com/docker/compose/releases/download/v2.23.0/docker-compose-linux-x86_64 -o /usr/local/lib/docker/cli-plugins/docker-compose\n  - chmod +x /usr/local/lib/docker/cli-plugins/docker-compose\n  - ln -sf /usr/local/lib/docker/cli-plugins/docker-compose /usr/local/bin/docker-compose\n  # Даем права на docker socket\n  - chmod 666 /var/run/docker.sock\n"
+              "user-data": "#cloud-config\npackages:\n  - docker.io\n  - curl\n  - nginx\n  - git\nruncmd:\n  - systemctl enable docker\n  - systemctl start docker\n  # Добавляем пользователя в группу docker и перезагружаем групповые права\n  - usermod -aG docker ubuntu\n  - newgrp docker\n  # Установка Docker Compose v2\n  - mkdir -p /usr/local/lib/docker/cli-plugins\n  - curl -SL https://github.com/docker/compose/releases/download/v2.23.0/docker-compose-linux-x86_64 -o /usr/local/lib/docker/cli-plugins/docker-compose\n  - chmod +x /usr/local/lib/docker/cli-plugins/docker-compose\n  - ln -sf /usr/local/lib/docker/cli-plugins/docker-compose /usr/local/bin/docker-compose\n  # Даем права на docker socket\n  - chmod 666 /var/run/docker.sock\n"
             },
             "metadata_options": [
               {
@@ -1015,20 +1038,20 @@ terraform.tfstate:
               {
                 "dns_record": [],
                 "index": 0,
-                "ip_address": "192.168.10.8",
+                "ip_address": "192.168.10.16",
                 "ipv4": true,
                 "ipv6": false,
                 "ipv6_address": "",
                 "ipv6_dns_record": [],
-                "mac_address": "d0:0d:af:03:2c:ac",
+                "mac_address": "d0:0d:18:67:85:e3",
                 "nat": true,
                 "nat_dns_record": [],
-                "nat_ip_address": "158.160.110.57",
+                "nat_ip_address": "89.169.152.220",
                 "nat_ip_version": "IPV4",
                 "security_group_ids": [
-                  "enp5b39rcf7pkj3d9igq"
+                  "enpsk7ved5b4rcj989q4"
                 ],
-                "subnet_id": "e9b8ivb77dnts43662st"
+                "subnet_id": "e9b0f5b74v037omglq1v"
               }
             ],
             "placement_policy": [
@@ -1060,7 +1083,6 @@ terraform.tfstate:
           "sensitive_attributes": [],
           "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDAsImRlbGV0ZSI6MzAwMDAwMDAwMDAwLCJ1cGRhdGUiOjMwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMSJ9",
           "dependencies": [
-            "yandex_vpc_network.url-shortener-network",
             "yandex_vpc_security_group.url-shortener-sg",
             "yandex_vpc_subnet.url-shortener-subnet"
           ]
@@ -1126,7 +1148,7 @@ terraform.tfstate:
                 "version": "15"
               }
             ],
-            "created_at": "2025-09-10T15:30:25Z",
+            "created_at": "2025-09-19T14:43:36Z",
             "database": [],
             "deletion_protection": false,
             "description": "",
@@ -1136,19 +1158,19 @@ terraform.tfstate:
             "host": [
               {
                 "assign_public_ip": false,
-                "fqdn": "rc1a-m2b8qtb1hmld5bih.mdb.yandexcloud.net",
+                "fqdn": "rc1a-qph7k6s9hr8s9dkh.mdb.yandexcloud.net",
                 "name": "",
                 "priority": 0,
                 "replication_source": "",
                 "replication_source_name": "",
                 "role": "MASTER",
-                "subnet_id": "e9b8ivb77dnts43662st",
+                "subnet_id": "e9b0f5b74v037omglq1v",
                 "zone": "ru-central1-a"
               }
             ],
             "host_group_ids": [],
             "host_master_name": "",
-            "id": "c9qt0402chclrvlopm5v",
+            "id": "c9qr0dk1a9aoe6n4i3ji",
             "labels": {},
             "maintenance_window": [
               {
@@ -1158,7 +1180,7 @@ terraform.tfstate:
               }
             ],
             "name": "url-shortener-db",
-            "network_id": "enpkunh75h2c08h563dn",
+            "network_id": "enp6n0t0iv7n0hfj3hao",
             "restore": [],
             "security_group_ids": [],
             "status": "RUNNING",
@@ -1183,10 +1205,10 @@ terraform.tfstate:
         {
           "schema_version": 0,
           "attributes": {
-            "cluster_id": "c9qt0402chclrvlopm5v",
+            "cluster_id": "c9qr0dk1a9aoe6n4i3ji",
             "deletion_protection": "unspecified",
             "extension": [],
-            "id": "c9qt0402chclrvlopm5v:urlshortener",
+            "id": "c9qr0dk1a9aoe6n4i3ji:urlshortener",
             "lc_collate": "C",
             "lc_type": "C",
             "name": "urlshortener",
@@ -1214,11 +1236,11 @@ terraform.tfstate:
         {
           "schema_version": 0,
           "attributes": {
-            "cluster_id": "c9qt0402chclrvlopm5v",
+            "cluster_id": "c9qr0dk1a9aoe6n4i3ji",
             "conn_limit": 50,
             "deletion_protection": "unspecified",
             "grants": [],
-            "id": "c9qt0402chclrvlopm5v:app_user",
+            "id": "c9qr0dk1a9aoe6n4i3ji:app_user",
             "login": true,
             "name": "app_user",
             "password": "secure_password_123",
@@ -1252,15 +1274,15 @@ terraform.tfstate:
         {
           "schema_version": 0,
           "attributes": {
-            "created_at": "2025-09-10T15:30:22Z",
-            "default_security_group_id": "enpk4lt142qin5bbj6o0",
+            "created_at": "2025-09-19T14:43:32Z",
+            "default_security_group_id": "enpd4i2a22jfvp3dkh4a",
             "description": "",
             "folder_id": "b1g9lv48m4bbjrldflqj",
-            "id": "enpkunh75h2c08h563dn",
+            "id": "enp6n0t0iv7n0hfj3hao",
             "labels": {},
             "name": "url-shortener-network",
             "subnet_ids": [
-              "e9b8ivb77dnts43662st"
+              "e9b0f5b74v037omglq1v"
             ],
             "timeouts": null
           },
@@ -1278,13 +1300,13 @@ terraform.tfstate:
         {
           "schema_version": 0,
           "attributes": {
-            "created_at": "2025-09-10T15:30:25Z",
+            "created_at": "2025-09-19T14:43:37Z",
             "description": "Security group for URL shortener application",
             "egress": [
               {
                 "description": "Outbound traffic",
                 "from_port": 0,
-                "id": "enpjaisua3f28jtcr257",
+                "id": "enptftciik2jeikhb3s0",
                 "labels": {},
                 "port": -1,
                 "predefined_target": "",
@@ -1298,12 +1320,12 @@ terraform.tfstate:
               }
             ],
             "folder_id": "b1g9lv48m4bbjrldflqj",
-            "id": "enp5b39rcf7pkj3d9igq",
+            "id": "enpsk7ved5b4rcj989q4",
             "ingress": [
               {
                 "description": "Application port",
                 "from_port": -1,
-                "id": "enpulssrt9gvgvee78bq",
+                "id": "enp67rnjalao31p2mere",
                 "labels": {},
                 "port": 8080,
                 "predefined_target": "",
@@ -1318,7 +1340,7 @@ terraform.tfstate:
               {
                 "description": "HTTP",
                 "from_port": -1,
-                "id": "enpbsmu94sni3rvhp81r",
+                "id": "enphl1vq9fbeadrgrjpm",
                 "labels": {},
                 "port": 80,
                 "predefined_target": "",
@@ -1333,7 +1355,7 @@ terraform.tfstate:
               {
                 "description": "HTTPS",
                 "from_port": -1,
-                "id": "enp1dq600co6ckagjlt6",
+                "id": "enpj3eh5h8d1iv46tts7",
                 "labels": {},
                 "port": 443,
                 "predefined_target": "",
@@ -1348,7 +1370,7 @@ terraform.tfstate:
               {
                 "description": "SSH",
                 "from_port": -1,
-                "id": "enpt5dh590892oi8lkf4",
+                "id": "enp3ef7fr5clfk8j3av8",
                 "labels": {},
                 "port": 22,
                 "predefined_target": "",
@@ -1363,7 +1385,7 @@ terraform.tfstate:
             ],
             "labels": {},
             "name": "url-shortener-security-group",
-            "network_id": "enpkunh75h2c08h563dn",
+            "network_id": "enp6n0t0iv7n0hfj3hao",
             "status": "ACTIVE",
             "timeouts": null
           },
@@ -1384,14 +1406,14 @@ terraform.tfstate:
         {
           "schema_version": 0,
           "attributes": {
-            "created_at": "2025-09-10T15:30:24Z",
+            "created_at": "2025-09-19T14:43:35Z",
             "description": "",
             "dhcp_options": [],
             "folder_id": "b1g9lv48m4bbjrldflqj",
-            "id": "e9b8ivb77dnts43662st",
+            "id": "e9b0f5b74v037omglq1v",
             "labels": {},
             "name": "url-shortener-subnet",
-            "network_id": "enpkunh75h2c08h563dn",
+            "network_id": "enp6n0t0iv7n0hfj3hao",
             "route_table_id": "",
             "timeouts": null,
             "v4_cidr_blocks": [
@@ -1569,6 +1591,7 @@ resource "yandex_compute_instance" "url-shortener-vm" {
         - docker.io
         - curl
         - nginx
+        - git
       runcmd:
         - systemctl enable docker
         - systemctl start docker
@@ -1585,7 +1608,6 @@ resource "yandex_compute_instance" "url-shortener-vm" {
       EOF
   }
 }
-
 
 # Отдельный ресурс для provisioning
 resource "null_resource" "provision_vm" {
@@ -1615,35 +1637,8 @@ resource "null_resource" "provision_vm" {
       db_name     = yandex_mdb_postgresql_database.urlshortener.name
       db_user     = var.db_username
       db_password = var.db_password
-      vm_ip       = yandex_compute_instance.url-shortener-vm.network_interface[0].nat_ip_address
     })
     destination = "/tmp/docker-compose.yml"
-  }
-
-  # Копируем только нужные файлы по отдельности
-  provisioner "file" {
-    source      = "../Dockerfile"
-    destination = "/tmp/Dockerfile"
-  }
-
-  provisioner "file" {
-    source      = "../go.mod"
-    destination = "/tmp/go.mod"
-  }
-
-  provisioner "file" {
-    source      = "../go.sum"
-    destination = "/tmp/go.sum"
-  }
-
-  provisioner "file" {
-    source      = "../cmd/server/"
-    destination = "/tmp/cmd/server/"
-  }
-
-  provisioner "file" {
-    source      = "../internal/"
-    destination = "/tmp/internal/"
   }
 
   provisioner "remote-exec" {
@@ -1653,27 +1648,29 @@ resource "null_resource" "provision_vm" {
       "echo 'Waiting for Docker to start...'",
       "until systemctl is-active --quiet docker; do sleep 10; echo 'Docker not ready yet...'; done",
       
+      "echo 'Cloning repository...'",
+      "cd /tmp && rm -rf URL-shortener",
+      "git clone https://github.com/Zikkyrat4/URL-shortener.git",
+      
       "echo 'Setting up Nginx...'",
       "sudo mkdir -p /etc/nginx/sites-available",
       "sudo mkdir -p /etc/nginx/sites-enabled",
       "sudo mv /tmp/nginx.conf /etc/nginx/sites-available/url-shortener",
       "sudo ln -sf /etc/nginx/sites-available/url-shortener /etc/nginx/sites-enabled/",
       "sudo rm -f /etc/nginx/sites-enabled/default",
-      "sudo systemctl restart nginx",
       
       "echo 'Setting up application...'",
       "mkdir -p ~/app",
+      "cp -r /tmp/URL-shortener/* ~/app/",
       "mv /tmp/docker-compose.yml ~/app/docker-compose.yml",
-      "mv /tmp/Dockerfile ~/app/Dockerfile",
-      "mv /tmp/go.mod ~/app/go.mod",
-      "mv /tmp/go.sum ~/app/go.sum",
-      "mkdir -p ~/app/cmd/server",
-      "mv /tmp/cmd/server/* ~/app/cmd/server/",
-      "mkdir -p ~/app/internal",
-      "mv /tmp/internal ~/app/",
       
-      "echo 'Starting containers...'",
-      "cd ~/app && sudo docker-compose up -d --build"
+      "echo 'Building and starting containers...'",
+      "cd ~/app && docker compose up -d --build",
+      
+      "echo 'Restarting Nginx...'",
+      "sudo systemctl restart nginx",
+      
+      "echo 'Deployment completed!'"
     ]
   }
 }
@@ -4574,13 +4571,23 @@ Unnamed repository; edit this file 'description' to name the repository.
 
 index:
 ```
-Error reading file: 'utf-8' codec can't decode byte 0xb9 in position 13: invalid start byte
+Error reading file: 'utf-8' codec can't decode byte 0xc7 in position 13: invalid continuation byte
 ```
 
 COMMIT_EDITMSG:
 ```
-add Redis
+fix gitignore
 
+```
+
+f5e6e92176657987af33f5e89aec11971ad1d1:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xd0 in position 18: invalid continuation byte
+```
+
+24477760359bf1ce590af98202c857e6c74c50:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xed in position 2: invalid continuation byte
 ```
 
 97106cb3f92774a30ea3e476a60729fe44c83b:
@@ -4598,14 +4605,29 @@ Error reading file: 'utf-8' codec can't decode byte 0xc8 in position 17: invalid
 Error reading file: 'utf-8' codec can't decode byte 0x8d in position 2: invalid start byte
 ```
 
+eb7b19da2a6fb2eaee9406b5e65b78032fe661:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x95 in position 2: invalid start byte
+```
+
 2adfe1010c610a6432215b7eaeb2060d4639e6:
 ```
 Error reading file: 'utf-8' codec can't decode byte 0xad in position 2: invalid start byte
 ```
 
+98080634fd38714ca9afcc61770307b8be57a0:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xb0 in position 7: invalid start byte
+```
+
 ccb74c50150b5ca2106eb02015270b1645fdfa:
 ```
 Error reading file: 'utf-8' codec can't decode byte 0xb6 in position 8: invalid start byte
+```
+
+5624d1a37ddf1ba9d5372161f1c4d78f8d7ae6:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xad in position 2: invalid start byte
 ```
 
 7ae1da2bdfc23c49c89a9d203a104555475910:
@@ -4631,6 +4653,11 @@ Error reading file: 'utf-8' codec can't decode byte 0xa5 in position 2: invalid 
 c07bfb3916c35bf47a53657fabb8cff1497994:
 ```
 Error reading file: 'utf-8' codec can't decode byte 0x8d in position 2: invalid start byte
+```
+
+f25b3e8f4722477a067b7927bd8f7f76ccb1bd:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xa5 in position 2: invalid start byte
 ```
 
 5755adca2a2472fc664cbc966c47e10d3f2c0a:
@@ -4693,10 +4720,25 @@ Error reading file: 'utf-8' codec can't decode byte 0xca in position 19: invalid
 Error reading file: 'utf-8' codec can't decode byte 0x85 in position 14: invalid start byte
 ```
 
+0c75297115f60d247a53177b0aac82f799b745:
+```
+Error reading file: 'utf-8' codec can't decode bytes in position 2-3: invalid continuation byte
+```
+
 825dc642cb6eb9a060e54bf8d69288fbee4904:
 ```
 x+)JMU0`  
 ,
+```
+
+3ba73f91f0fa565839413e9e541fcb91161a99:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xd0 in position 18: invalid continuation byte
+```
+
+9d6b9be6e30d9966622708a737f6fcddacb060:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xd0 in position 18: invalid continuation byte
 ```
 
 a2b525ae80f6133ec2a1ea71ad37ad84033d7f:
@@ -4707,6 +4749,11 @@ Error reading file: 'utf-8' codec can't decode byte 0x85 in position 14: invalid
 3bb7668d19aecc1fbaba7083d881fb2f295b7f:
 ```
 Error reading file: 'utf-8' codec can't decode byte 0xca in position 19: invalid continuation byte
+```
+
+959767d1934652a6a0f3a473b648988f59e25c:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xc8 in position 20: invalid continuation byte
 ```
 
 bf325590b249b96cc26987fd851987e1f1e6fd:
@@ -4739,9 +4786,19 @@ Error reading file: 'utf-8' codec can't decode byte 0xb6 in position 8: invalid 
 Error reading file: 'utf-8' codec can't decode byte 0xad in position 2: invalid start byte
 ```
 
+cd80b9927085b6e68b7f137cba4fc4b508f2c1:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xad in position 2: invalid start byte
+```
+
 e5ca74777bd664187d9aaaf77590917c3b3281:
 ```
 Error reading file: 'utf-8' codec can't decode byte 0x85 in position 15: invalid start byte
+```
+
+83f734831ec3348961a94c923a93815cf15dd1:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xbd in position 2: invalid start byte
 ```
 
 8790b00f6f6dfb5d91c1822ae67e05f4543ce1:
@@ -4749,9 +4806,19 @@ Error reading file: 'utf-8' codec can't decode byte 0x85 in position 15: invalid
 Error reading file: 'utf-8' codec can't decode byte 0xd0 in position 20: invalid continuation byte
 ```
 
+8b2396247b62fba6530bac6ad3b026a0333b10:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x8d in position 2: invalid start byte
+```
+
 be0084a2833de7a336d079d74334ecafd8cc3b:
 ```
 Error reading file: 'utf-8' codec can't decode byte 0x90 in position 3: invalid start byte
+```
+
+816d54e70889881d5eff471712e307cdcf2fca:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xa5 in position 2: invalid start byte
 ```
 
 cada6822bb468cba705ee26c4b5f276c974dc9:
@@ -4762,6 +4829,11 @@ Error reading file: 'utf-8' codec can't decode byte 0xd0 in position 20: invalid
 b562bbbdf37088381067d5b02225aeb020d808:
 ```
 Error reading file: 'utf-8' codec can't decode byte 0x85 in position 15: invalid start byte
+```
+
+e9256bcf7bf7bc8de89ece40a740a3ad11cb86:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xca in position 3: invalid continuation byte
 ```
 
 f1577487dbb71d72cb9d9860bb2ec54913068c:
@@ -4824,6 +4896,16 @@ Error reading file: 'utf-8' codec can't decode byte 0x8d in position 2: invalid 
 Error reading file: 'utf-8' codec can't decode byte 0xc9 in position 19: invalid continuation byte
 ```
 
+14c5e131e806af4123bb315d879187ba9b4212:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xca in position 3: invalid continuation byte
+```
+
+7a3dccb7bf707d75df776da0da7d8119e9e188:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xa5 in position 2: invalid start byte
+```
+
 2a63bfb647356d59b8d2dc78b3941359984a97:
 ```
 Error reading file: 'utf-8' codec can't decode byte 0xcd in position 4: invalid continuation byte
@@ -4847,6 +4929,11 @@ Error reading file: 'utf-8' codec can't decode byte 0x92 in position 3: invalid 
 038bbb96b5e5d735a26fe0326b5c559d9db261:
 ```
 Error reading file: 'utf-8' codec can't decode byte 0x90 in position 3: invalid start byte
+```
+
+3fc071f881b39e9cda3c2550daafb62ac54bcb:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xed in position 2: invalid continuation byte
 ```
 
 13545b8f62b2eb4edad2cfcdde593822fe868b:
@@ -4873,6 +4960,8 @@ f9e3a1555c16025d4c5ad254a2091a622bdf2a6b f9e3a1555c16025d4c5ad254a2091a622bdf2a6
 f9e3a1555c16025d4c5ad254a2091a622bdf2a6b cb6f67cad05f9f8699940fd9ecad0af4b3b1020b Даниил Прокопенко <zikkyrat@MacBook-Air-Daniil.local> 1756988614 +0300	commit: Postgresql
 cb6f67cad05f9f8699940fd9ecad0af4b3b1020b b435a88c3d3b9cf7b80990810e3ec9dfbfafd569 Daniil <prokopenko.danilka121@gmail.com> 1756991697 +0300	commit: Postgesql
 b435a88c3d3b9cf7b80990810e3ec9dfbfafd569 b3585639b8df452cbb53ae4eb175260f6501a400 Daniil <prokopenko.danilka121@gmail.com> 1756995742 +0300	commit: add Redis
+b3585639b8df452cbb53ae4eb175260f6501a400 487a3dccb7bf707d75df776da0da7d8119e9e188 Daniil <prokopenko.danilka121@gmail.com> 1758206868 +0300	commit: add terraform
+487a3dccb7bf707d75df776da0da7d8119e9e188 bcf25b3e8f4722477a067b7927bd8f7f76ccb1bd Daniil <prokopenko.danilka121@gmail.com> 1758206953 +0300	commit: fix gitignore
 
 ```
 
@@ -4883,6 +4972,8 @@ f9e3a1555c16025d4c5ad254a2091a622bdf2a6b f9e3a1555c16025d4c5ad254a2091a622bdf2a6
 f9e3a1555c16025d4c5ad254a2091a622bdf2a6b cb6f67cad05f9f8699940fd9ecad0af4b3b1020b Даниил Прокопенко <zikkyrat@MacBook-Air-Daniil.local> 1756988614 +0300	commit: Postgresql
 cb6f67cad05f9f8699940fd9ecad0af4b3b1020b b435a88c3d3b9cf7b80990810e3ec9dfbfafd569 Daniil <prokopenko.danilka121@gmail.com> 1756991697 +0300	commit: Postgesql
 b435a88c3d3b9cf7b80990810e3ec9dfbfafd569 b3585639b8df452cbb53ae4eb175260f6501a400 Daniil <prokopenko.danilka121@gmail.com> 1756995742 +0300	commit: add Redis
+b3585639b8df452cbb53ae4eb175260f6501a400 487a3dccb7bf707d75df776da0da7d8119e9e188 Daniil <prokopenko.danilka121@gmail.com> 1758206868 +0300	commit: add terraform
+487a3dccb7bf707d75df776da0da7d8119e9e188 bcf25b3e8f4722477a067b7927bd8f7f76ccb1bd Daniil <prokopenko.danilka121@gmail.com> 1758206953 +0300	commit: fix gitignore
 
 ```
 
@@ -4892,6 +4983,8 @@ main:
 f9e3a1555c16025d4c5ad254a2091a622bdf2a6b cb6f67cad05f9f8699940fd9ecad0af4b3b1020b Даниил Прокопенко <zikkyrat@MacBook-Air-Daniil.local> 1756988648 +0300	update by push
 cb6f67cad05f9f8699940fd9ecad0af4b3b1020b b435a88c3d3b9cf7b80990810e3ec9dfbfafd569 Daniil <prokopenko.danilka121@gmail.com> 1756991710 +0300	update by push
 b435a88c3d3b9cf7b80990810e3ec9dfbfafd569 b3585639b8df452cbb53ae4eb175260f6501a400 Daniil <prokopenko.danilka121@gmail.com> 1756995750 +0300	update by push
+b3585639b8df452cbb53ae4eb175260f6501a400 487a3dccb7bf707d75df776da0da7d8119e9e188 Daniil <prokopenko.danilka121@gmail.com> 1758206882 +0300	update by push
+487a3dccb7bf707d75df776da0da7d8119e9e188 bcf25b3e8f4722477a067b7927bd8f7f76ccb1bd Daniil <prokopenko.danilka121@gmail.com> 1758206957 +0300	update by push
 
 ```
 
@@ -5753,12 +5846,12 @@ fi
 
 main:
 ```
-b3585639b8df452cbb53ae4eb175260f6501a400
+bcf25b3e8f4722477a067b7927bd8f7f76ccb1bd
 
 ```
 
 main:
 ```
-b3585639b8df452cbb53ae4eb175260f6501a400
+bcf25b3e8f4722477a067b7927bd8f7f76ccb1bd
 
 ```

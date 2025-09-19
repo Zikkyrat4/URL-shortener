@@ -151,6 +151,7 @@ resource "yandex_compute_instance" "url-shortener-vm" {
         - docker.io
         - curl
         - nginx
+        - git
       runcmd:
         - systemctl enable docker
         - systemctl start docker
@@ -167,7 +168,6 @@ resource "yandex_compute_instance" "url-shortener-vm" {
       EOF
   }
 }
-
 
 # Отдельный ресурс для provisioning
 resource "null_resource" "provision_vm" {
@@ -197,35 +197,8 @@ resource "null_resource" "provision_vm" {
       db_name     = yandex_mdb_postgresql_database.urlshortener.name
       db_user     = var.db_username
       db_password = var.db_password
-      vm_ip       = yandex_compute_instance.url-shortener-vm.network_interface[0].nat_ip_address
     })
     destination = "/tmp/docker-compose.yml"
-  }
-
-  # Копируем только нужные файлы по отдельности
-  provisioner "file" {
-    source      = "../Dockerfile"
-    destination = "/tmp/Dockerfile"
-  }
-
-  provisioner "file" {
-    source      = "../go.mod"
-    destination = "/tmp/go.mod"
-  }
-
-  provisioner "file" {
-    source      = "../go.sum"
-    destination = "/tmp/go.sum"
-  }
-
-  provisioner "file" {
-    source      = "../cmd/server/"
-    destination = "/tmp/cmd/server/"
-  }
-
-  provisioner "file" {
-    source      = "../internal/"
-    destination = "/tmp/internal/"
   }
 
   provisioner "remote-exec" {
@@ -235,27 +208,29 @@ resource "null_resource" "provision_vm" {
       "echo 'Waiting for Docker to start...'",
       "until systemctl is-active --quiet docker; do sleep 10; echo 'Docker not ready yet...'; done",
       
+      "echo 'Cloning repository...'",
+      "cd /tmp && rm -rf URL-shortener",
+      "git clone https://github.com/Zikkyrat4/URL-shortener.git",
+      
       "echo 'Setting up Nginx...'",
       "sudo mkdir -p /etc/nginx/sites-available",
       "sudo mkdir -p /etc/nginx/sites-enabled",
       "sudo mv /tmp/nginx.conf /etc/nginx/sites-available/url-shortener",
       "sudo ln -sf /etc/nginx/sites-available/url-shortener /etc/nginx/sites-enabled/",
       "sudo rm -f /etc/nginx/sites-enabled/default",
-      "sudo systemctl restart nginx",
       
       "echo 'Setting up application...'",
       "mkdir -p ~/app",
+      "cp -r /tmp/URL-shortener/* ~/app/",
       "mv /tmp/docker-compose.yml ~/app/docker-compose.yml",
-      "mv /tmp/Dockerfile ~/app/Dockerfile",
-      "mv /tmp/go.mod ~/app/go.mod",
-      "mv /tmp/go.sum ~/app/go.sum",
-      "mkdir -p ~/app/cmd/server",
-      "mv /tmp/cmd/server/* ~/app/cmd/server/",
-      "mkdir -p ~/app/internal",
-      "mv /tmp/internal ~/app/",
       
-      "echo 'Starting containers...'",
-      "cd ~/app && sudo docker-compose up -d --build"
+      "echo 'Building and starting containers...'",
+      "cd ~/app && docker compose up -d --build",
+      
+      "echo 'Restarting Nginx...'",
+      "sudo systemctl restart nginx",
+      
+      "echo 'Deployment completed!'"
     ]
   }
 }
